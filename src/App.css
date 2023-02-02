@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-primary;
+}
+
+.row,
+.menu,
+.logo a,
+.logo a span,
+.banner,
+.banner .leftSide,
+.banner .leftSide ul,
+.brands ul {
+  @apply flex;
+}
+.menu {
+  @apply gap-10;
+}
+nav {
+  @apply py-14;
+}
+nav .row,
+.logo a {
+  @apply items-center gap-3;
+}
+
+nav .row {
+  @apply justify-between;
+}
+
+.menu li a {
+  @apply font-primary font-[400] text-[18px] leading-[95%] text-[#292830];
+}
+
+.menu-button button {
+  @apply font-primary font-[400] text-[18px] leading-[95%] text-[#ff7235] border-[1px] border-[#ff7235] rounded-[8px] py-4 px-8;
+}
+
+.logo a span {
+  @apply w-10 h-10 bg-logBg rounded-full items-center justify-center;
+}
+.banner-section {
+  @apply my-24;
+}
+.banner .leftSide {
+  @apply flex-col gap-[30px];
+}
+.banner .leftSide,
+.banner .rightSide {
+  @apply flex-1;
+}
+.banner .rightSide {
+  @apply flex justify-end;
+}
+
+.banner .leftSide h1 {
+  @apply font-primary font-[700] text-[96px] leading-[100%] text-[#292830];
+}
+.banner .leftSide button {
+  @apply font-primary font-[400] text-[24px] leading-[39px] text-[#fff] w-[225px] h-[75px] bg-[#FF7235] rounded-[8px];
+}
+.banner .leftSide p {
+  @apply font-primary font-[400] text-[24px] leading-[39px] text-[#bdbdbd];
+}
+.banner .leftSide ul {
+  @apply items-center gap-[24px];
+}
+
+.section-overview {
+  @apply bg-[#FF7235] pt-20;
+}
+
+.brands ul {
+  @apply justify-between py-[100px];
+}
