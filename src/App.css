@@ -15,7 +15,13 @@ body {
 .banner,
 .banner .leftSide,
 .banner .leftSide ul,
-.brands ul {
+.brands ul,
+.always,
+.always .desc,
+.products,
+.cards ul,
+.cards ul li a,
+.cards ul li a div {
   @apply flex;
 }
 .menu {
@@ -51,7 +57,9 @@ nav .row {
   @apply flex-col gap-[30px];
 }
 .banner .leftSide,
-.banner .rightSide {
+.banner .rightSide,
+.always .desc,
+.always .image {
   @apply flex-1;
 }
 .banner .rightSide {
@@ -77,4 +85,53 @@ nav .row {
 
 .brands ul {
   @apply justify-between py-[100px];
+}
+.always {
+  @apply gap-5 items-center;
+}
+.always h2 {
+  @apply font-primary font-[400] text-[22px] leading-9 uppercase text-[#bdbdbd];
+}
+.always h3,
+.products h4 {
+  @apply font-primary font-[700] text-[96px] leading-[100%] text-[#292830];
+}
+.always p,
+.products p {
+  @apply font-primary font-[400] text-[24px] leading-[39px] text-[#bdbdbd];
+}
+
+.always .desc {
+  @apply flex-col gap-6;
+}
+
+.read-more {
+  @apply font-primary font-[400] leading-[100%] text-[24px] text-[#ff7235] flex gap-4;
+}
+
+.products {
+  @apply gap-8 items-center;
+}
+
+.products h4 {
+  @apply grow-[0];
+}
+.products p {
+  @apply shrink;
+}
+
+.cards ul {
+  @apply justify-between gap-7;
+}
+.cards ul li a {
+  @apply flex-col items-center border-[1px] p-14 text-center;
+}
+.cards ul li a h5 {
+  @apply font-primary font-[500] text-[30px] leading-[100%] text-[#292830] mb-3;
+}
+.cards ul li a p {
+  @apply font-primary font-[400] text-[14px] leading-[23px] text-[#bdbdbd] mb-8;
+}
+.cards ul li a div {
+  @apply w-[64px] h-[64px] bg-bgIcon rounded-full items-center justify-center mb-6;
 }

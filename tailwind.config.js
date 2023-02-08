@@ -19,7 +19,9 @@ module.exports = {
     },
     colors: {
       logBg: "#ff7235",
+      bgIcon: "rgba(226, 89, 139, 0.05)",
     },
+
     extend: {},
   },
   plugins: [],
