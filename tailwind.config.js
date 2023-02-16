@@ -22,7 +22,11 @@ module.exports = {
       bgIcon: "rgba(226, 89, 139, 0.05)",
     },
 
-    extend: {},
+    extend: {
+      boxShadow: {
+        cloud: "0px 0px 50px rgba(0, 0, 0, 0.04)",
+      },
+    },
   },
   plugins: [],
 };

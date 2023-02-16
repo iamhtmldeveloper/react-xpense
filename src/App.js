@@ -8,6 +8,9 @@ import Free from "./Components/Free/Free";
 import Use from "./Components/Use/Use";
 import Products from "./Components/Products/Products";
 import Cards from "./Components/Products/Cards";
+import ChoosePlan from "./Components/ChoosPlan/ChoosePlan";
+import BestWishers from "./Components/BestWishers/BestWishers";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +23,12 @@ function App() {
       <Use />
       <Products />
       <Cards />
+      <ChoosePlan />
+      <BestWishers />
+      <Footer />
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }

@@ -25,7 +25,7 @@ const Cards = () => {
               </a>
             </li>
             <li>
-              <a href="javascript://">
+              <a className="active" href="javascript://">
                 <div>
                   <img src={cloudImg} alt="Cloud Image" />
                 </div>

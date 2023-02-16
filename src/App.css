@@ -21,7 +21,11 @@ body {
 .products,
 .cards ul,
 .cards ul li a,
-.cards ul li a div {
+.cards ul li a div,
+.chooseList .cList,
+.chooseList .cList li a,
+.chooseList .cPrice,
+.chooseList button {
   @apply flex;
 }
 .menu {
@@ -120,13 +124,18 @@ nav .row {
   @apply shrink;
 }
 
-.cards ul {
+.cards ul,
+.chooseList .cList {
   @apply justify-between gap-7;
 }
 .cards ul li a {
-  @apply flex-col items-center border-[1px] p-14 text-center;
+  @apply flex-col items-center rounded-[12px] p-14 text-center hover:shadow-cloud;
 }
-.cards ul li a h5 {
+.cards ul li a.active {
+  @apply shadow-cloud;
+}
+.cards ul li a h5,
+.chooseList ul li a h5 {
   @apply font-primary font-[500] text-[30px] leading-[100%] text-[#292830] mb-3;
 }
 .cards ul li a p {
@@ -134,4 +143,98 @@ nav .row {
 }
 .cards ul li a div {
   @apply w-[64px] h-[64px] bg-bgIcon rounded-full items-center justify-center mb-6;
+}
+
+.choosePlan-section h1 {
+  @apply font-primary font-[700] text-[72px] flex justify-center w-full leading-[100%] text-[#292830];
+}
+
+.chooseList .cLists {
+  @apply flex flex-col;
+}
+.chooseList .cLists li {
+  @apply font-primary font-[400] text-[18px] leading-[29px] text-[292830];
+}
+.chooseList .cList li a {
+  @apply flex-col gap-[27px] p-14 border-[1px] border-[#F5F5F5] rounded-[12px] hover:shadow-cloud;
+}
+.chooseList .cList li a h5 {
+  @apply mb-0;
+}
+.chooseList .cPrice {
+  @apply flex-col;
+}
+
+.chooseList .cPrice p {
+  @apply font-primary font-[600] text-[24px] leading-[39px] text-[#292830];
+}
+.chooseList .cPrice p span {
+  @apply text-[20px] text-[#BDBDBD] font-normal;
+}
+.chooseList .cPrice small {
+  @apply font-primary font-[400] text-[12px] leading-[19px] text-[#bdbdbd];
+}
+.chooseList button {
+  @apply font-primary gap-[14px] items-center font-[400] text-[16px] leading-[26px] text-[#ff7235] border-[1px] border-[#ff7235] rounded-[12px] py-3 px-6;
+}
+
+.section-bestwish h5 {
+  @apply font-primary font-[700] text-[96px] leading-[100%] text-center text-[#292830];
+}
+
+.swiper-bestwish p {
+  @apply font-primary font-[400] text-[18px] leading-[29px] text-[#000];
+}
+.swiper-bestwish ul {
+  @apply flex gap-3 items-center mt-7;
+}
+.swiper-bestwish ul li {
+  @apply font-primary font-[700] text-[16px] leading-[26px] text-[#000];
+}
+.swiper-bestwish ul li small {
+  @apply text-[#BDBDBD] font-[400];
+}
+.swiper-bestwish .swiper-slide div {
+  @apply border-t-[10px] p-7 border-[1px] border-[#F5F5F5] rounded-[12px];
+}
+.swiper-bestwish .swiper-slide:nth-child(1) div {
+  @apply border-t-[#FF7235];
+}
+.swiper-bestwish .swiper-slide:nth-child(2) div {
+  @apply border-t-[#FFBE21];
+}
+.swiper-bestwish .swiper-slide:nth-child(3) div {
+  @apply border-t-[#4756DF];
+}
+.swiper-bestwish .swiper-slide:nth-child(4) div {
+  @apply border-t-[#3EC1F3];
+}
+.swiper-bestwish .swiper-slide:nth-child(5) div {
+  @apply border-t-[#BB7259];
+}
+.swiper-bestwish .swiper-slide:nth-child(6) div {
+  @apply border-t-[#FF7235];
+}
+.swiper-bestwish .swiper-slide:nth-child(7) div {
+  @apply border-t-[#FFBE21];
+}
+.swiper-bestwish .swiper-slide:nth-child(8) div {
+  @apply border-t-[#4756DF];
+}
+.swiper-bestwish .swiper-slide:nth-child(9) div {
+  @apply border-t-[#3EC1F3];
+}
+.swiper-bestwish .swiper-slide:nth-child(10) div {
+  @apply border-t-[#BB7259];
+}
+
+.footer-section {
+  @apply flex justify-between;
+}
+
+.footer-section h6 {
+  @apply mb-6 font-primary font-[500] text-[24px] leading-[39px] uppercase text-[#292830];
+}
+.footer-section .column li a {
+  @apply font-primary font-[500] text-[18px] leading-[29px] text-[#292830];
 }
