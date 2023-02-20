@@ -20,12 +20,16 @@ module.exports = {
     colors: {
       logBg: "#ff7235",
       bgIcon: "rgba(226, 89, 139, 0.05)",
+      footerBorder: "rgba(189, 189, 189, 0.2)",
     },
 
     extend: {
       boxShadow: {
         cloud: "0px 0px 50px rgba(0, 0, 0, 0.04)",
       },
+      // border: {
+      //   footerBorder: "rgba(189, 189, 189, 0.2)",
+      // },
     },
   },
   plugins: [],

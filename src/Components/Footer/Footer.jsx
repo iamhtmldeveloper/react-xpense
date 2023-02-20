@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Logo from "../../assets/images/x.svg";
+import sFacebook from "../../assets/images/social-facebook.svg";
+import sLinkedin from "../../assets/images/social-linkedin.svg";
+import sTwitter from "../../assets/images/social-twitter.svg";
 
 const Footer = () => {
   return (
@@ -61,6 +64,47 @@ const Footer = () => {
             <h6>Newsletter</h6>
             <p>Over 25000 people have subscribed</p>
             <span>We don’t sell your email and spam</span>
+            <div className="subscribe">
+              <input type="text" placeholder="Enter your email" class="" />
+              <button>Subscribe</button>
+            </div>
+            <small> We don’t sell your email and spam</small>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto">
+        <div className="footer-bottom">
+          <div>
+            <ul>
+              <li>
+                <a href="#">Privacy & Terms</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Copyright @ 2022 xpence</p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src={sFacebook} alt="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={sLinkedin} alt="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={sTwitter} alt="Facebook" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

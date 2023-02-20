@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Logo from "../../assets/images/x.svg";
+import { headerData } from "./HeaderData";
 
 const Header = () => {
   return (
@@ -17,7 +18,14 @@ const Header = () => {
           </div>
           <div>
             <ul className="menu">
-              <li>
+              {headerData.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href={item.url}>{item.name}</a>
+                  </li>
+                );
+              })}
+              {/*<li>
                 <a href="">Features</a>
               </li>
               <li>
@@ -28,7 +36,7 @@ const Header = () => {
               </li>
               <li>
                 <a href="">Feedback</a>
-              </li>
+  </li> */}
             </ul>
           </div>
           <div className="menu-button">

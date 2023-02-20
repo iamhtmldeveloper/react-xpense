@@ -7,7 +7,9 @@
 body {
   @apply font-primary;
 }
-
+section {
+  @apply py-20;
+}
 .row,
 .menu,
 .logo a,
@@ -237,4 +239,24 @@ nav .row {
 }
 .footer-section .column li a {
   @apply font-primary font-[500] text-[18px] leading-[29px] text-[#292830];
+}
+.subscribe {
+  @apply py-2 px-2 border-[1px] border-[#000] rounded-[8px];
+}
+.subscribe input {
+  @apply py-[11px] px-4 outline-none focus:outline-none focus-visible:outline-none;
+}
+.subscribe button {
+  @apply py-[11px] px-4 font-primary font-[600] text-[16px] leading-[26px] text-[#fff] bg-[#FF7235] rounded-[8px];
+}
+
+footer small {
+  @apply font-primary font-[400] text-[14px] leading-[23px] text-[#BDBDBD];
+}
+
+.footer-bottom {
+  @apply flex justify-between border-t-[1px] border-footerBorder;
+}
+.footer-bottom ul {
+  @apply flex gap-6;
 }
