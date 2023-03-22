@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import AlwaysImg from "../../assets/images/alwalysonline.svg";
+import UseAnytime from "../../assets/images/use-anytime.svg";
 import arrowRight from "../../assets/images/arrow-right.svg";
 
 const Use = () => {
   return (
-    <section className="always-section">
+    <section id="pricing" className="always-section">
       <div className="container mx-auto">
         <div className="always">
           <div className="desc">
-            <h2>Alwalys online</h2>
-            <h3>Real-time support with cloud</h3>
+            <h2>Use anytime</h2>
+            <h3>Use anytime when you need</h3>
             <p>
               Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim
               accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper
@@ -21,7 +21,7 @@ const Use = () => {
             </a>
           </div>
           <div className="image">
-            <img src={AlwaysImg} alt="Always Online" />
+            <img src={UseAnytime} alt="Use anytime" />
           </div>
         </div>
       </div>

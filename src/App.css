@@ -34,7 +34,7 @@ section {
   @apply gap-10;
 }
 nav {
-  @apply py-14;
+  @apply py-14 fixed top-0 left-0 right-0 mx-auto;
 }
 nav .row,
 .logo a {
@@ -57,7 +57,7 @@ nav .row {
   @apply w-10 h-10 bg-logBg rounded-full items-center justify-center;
 }
 .banner-section {
-  @apply my-24;
+  @apply my-32;
 }
 .banner .leftSide {
   @apply flex-col gap-[30px];
@@ -86,21 +86,25 @@ nav .row {
 }
 
 .section-overview {
-  @apply bg-[#FF7235] pt-20;
+  @apply bg-[#FF7235] pt-24 pb-0;
+}
+
+.always-section {
+  @apply pt-0;
 }
 
 .brands ul {
-  @apply justify-between py-[100px];
+  @apply justify-between;
 }
 .always {
-  @apply gap-5 items-center;
+  @apply gap-12 items-center;
 }
 .always h2 {
   @apply font-primary font-[400] text-[22px] leading-9 uppercase text-[#bdbdbd];
 }
 .always h3,
 .products h4 {
-  @apply font-primary font-[700] text-[96px] leading-[100%] text-[#292830];
+  @apply font-primary font-[700] text-[90px] leading-[100%] text-[#292830];
 }
 .always p,
 .products p {
@@ -120,10 +124,10 @@ nav .row {
 }
 
 .products h4 {
-  @apply grow-[0];
+  @apply grow;
 }
 .products p {
-  @apply shrink;
+  @apply grow-0;
 }
 
 .cards ul,

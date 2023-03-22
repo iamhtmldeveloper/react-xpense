@@ -5,7 +5,7 @@ import arrowRight from "../../assets/images/arrow-right.svg";
 
 const Always = () => {
   return (
-    <section className="always-section">
+    <section id="features" className="always-section">
       <div className="container mx-auto">
         <div className="always">
           <div className="desc">

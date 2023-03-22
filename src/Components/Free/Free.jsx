@@ -1,19 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import AlwaysImg from "../../assets/images/alwalysonline.svg";
+import FreeCost from "../../assets/images/free-cost.svg";
 import arrowRight from "../../assets/images/arrow-right.svg";
 
 const Free = () => {
   return (
-    <section className="always-section">
+    <section id="about" className="always-section">
       <div className="container mx-auto">
         <div className="always">
           <div className="image">
-            <img src={AlwaysImg} alt="Always Online" />
+            <img src={FreeCost} alt="free some cost" />
           </div>
           <div className="desc">
-            <h2>Alwalys online</h2>
-            <h3>Real-time support with cloud</h3>
+            <h2>free some cost</h2>
+            <h3>Save cost for you and family</h3>
             <p>
               Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim
               accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper

@@ -2,6 +2,7 @@
 import React from "react";
 import Logo from "../../assets/images/x.svg";
 import { headerData } from "./HeaderData";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -21,7 +22,9 @@ const Header = () => {
               {headerData.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a href={item.url}>{item.name}</a>
+                    <Link to={item.url} smooth={true} spy={true}>
+                      {item.name}
+                    </Link>
                   </li>
                 );
               })}
