@@ -11,6 +11,7 @@ import Cards from "./Components/Products/Cards";
 import ChoosePlan from "./Components/ChoosPlan/ChoosePlan";
 import BestWishers from "./Components/BestWishers/BestWishers";
 import Footer from "./Components/Footer/Footer";
+import Downloaded from "./Components/Downloaded/Downloaded";
 
 function App() {
   return (
@@ -25,10 +26,8 @@ function App() {
       <Cards />
       <ChoosePlan />
       <BestWishers />
+      <Downloaded />
       <Footer />
-      <br></br>
-      <br></br>
-      <br></br>
     </div>
   );
 }

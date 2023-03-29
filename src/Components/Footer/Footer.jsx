@@ -63,7 +63,6 @@ const Footer = () => {
           <div className="column">
             <h6>Newsletter</h6>
             <p>Over 25000 people have subscribed</p>
-            <span>We don’t sell your email and spam</span>
             <div className="subscribe">
               <input type="text" placeholder="Enter your email" class="" />
               <button>Subscribe</button>

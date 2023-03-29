@@ -17,7 +17,7 @@ const Cards = () => {
                 <div>
                   <img src={cloudImg} alt="Cloud Image" />
                 </div>
-                <h5>Cloud server</h5>
+                <h5>Cross platform</h5>
                 <p>Elit esse cillum dolore eu fugiat nulla pariatur</p>
                 <span>
                   <img src={arrowRight} alt="Arrow" />
@@ -41,7 +41,7 @@ const Cards = () => {
                 <div>
                   <img src={cloudImg} alt="Cloud Image" />
                 </div>
-                <h5>Cloud server</h5>
+                <h5>Pure Javascript</h5>
                 <p>Elit esse cillum dolore eu fugiat nulla pariatur</p>
                 <span>
                   <img src={arrowRight} alt="Arrow" />

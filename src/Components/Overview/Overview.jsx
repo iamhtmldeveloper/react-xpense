@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 import overviewImg from "../../assets/images/overview.svg";
 import facebookImg from "../../assets/images/facebook.svg";
 import googleImg from "../../assets/images/google.svg";
@@ -10,9 +12,14 @@ const Overview = () => {
   return (
     <div>
       <section className="section-overview">
-        <div className="container mx-auto">
+        <motion.div
+          variants={fadeIn("up", 0.7)}
+          initial="hidden"
+          whileInView={"show"}
+          className="container mx-auto"
+        >
           <img src={overviewImg} alt="Overview" />
-        </div>
+        </motion.div>
       </section>
 
       <section className="brands">
